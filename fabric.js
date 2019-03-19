@@ -3,13 +3,15 @@ var canvas = new fabric.Canvas('firstCanvas',  {
   preserveObjectStacking: true});
 
 
-var myimg = fabric.Image.fromURL("https://www.humanesociety.org/sites/default/files/2018/06/cat-217679.jpg", function(img) {
+var myimg = fabric.Image.fromURL("https://i.imgur.com/4AiXzf8.jpg", function(img) {
 	canvas.add(img);
 	img.sendToBack();
 
     }, {
       crossorigin: 'Anonymous'
     });
+
+
 
 
 
