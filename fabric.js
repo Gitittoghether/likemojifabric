@@ -74,27 +74,30 @@ $("#next").click(function() {
 	group.set('height', lineOne.height +10);
 	canvas.renderAll();
 
-})
+});
 
-
-
-	// $("#export").click(function() {
-	// 	console.log("clicked export");
-		
-
-	// 	$("#firstCanvas").get(0).toBlob(function(blob) {
-	// 		saveAs(blob, "testexport");
-	// 	})
-
-	// });
 var imgData;
 
-		$("#export").click(function() {
+
+	$("#export").click(function() {
 		console.log("clicked export");
 
-		imgData = $("#firstCanvas").get(0).toDataURL();
+	imgData = $("#firstCanvas").get(0).toDataURL();
+		
+
+		$("#firstCanvas").get(0).toBlob(function(blob) {
+			saveAs(blob, "testexport");
+		})
 
 	});
+
+
+	// 	$("#export").click(function() {
+	// 	console.log("clicked export");
+
+	// 	imgData = $("#firstCanvas").get(0).toDataURL();
+
+	// });
 
 
 $("#orgName2").keyup(function() {
