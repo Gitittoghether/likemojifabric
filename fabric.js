@@ -11,9 +11,6 @@ var myimg = fabric.Image.fromURL("https://www.humanesociety.org/sites/default/fi
 
 
 
-// tyest
-
-
 var name = '';
 var name2 = '';
 var fonts = ['Monoton','Bungee Inline','Staatliches','Overlock','Fredericka the Great','Black Ops One','Audiowide','Unica One'];
