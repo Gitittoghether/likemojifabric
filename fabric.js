@@ -87,6 +87,14 @@ $("#next").click(function() {
 		})
 
 	});
+var imgData;
+
+		$("#export").click(function() {
+		console.log("clicked export");
+
+		imgData = $("#firstCanvas").get(0).toDataURL();
+
+	});
 
 
 $("#orgName2").keyup(function() {
