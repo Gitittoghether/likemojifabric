@@ -7,7 +7,10 @@ var myimg = fabric.Image.fromURL("https://www.humanesociety.org/sites/default/fi
 	canvas.add(img);
 	img.sendToBack();
 
+    }, {
+      crossorigin: 'Anonymous'
     });
+
 
 
 
