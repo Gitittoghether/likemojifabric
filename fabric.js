@@ -3,7 +3,7 @@ var canvas = new fabric.Canvas('firstCanvas',  {
   preserveObjectStacking: true});
 
 
-var myimg = fabric.Image.fromURL("awesomefab.jpg", function(img) {
+var myimg = fabric.Image.fromURL("awesomefab2.jpg", function(img) {
 	canvas.add(img);
 	img.sendToBack();
 
