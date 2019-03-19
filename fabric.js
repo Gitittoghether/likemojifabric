@@ -78,15 +78,15 @@ $("#next").click(function() {
 
 
 
-	$("#export").click(function() {
-		console.log("clicked export");
+	// $("#export").click(function() {
+	// 	console.log("clicked export");
 		
 
-		$("#firstCanvas").get(0).toBlob(function(blob) {
-			saveAs(blob, "testexport");
-		})
+	// 	$("#firstCanvas").get(0).toBlob(function(blob) {
+	// 		saveAs(blob, "testexport");
+	// 	})
 
-	});
+	// });
 var imgData;
 
 		$("#export").click(function() {
