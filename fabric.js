@@ -8,7 +8,7 @@ var myimg = fabric.Image.fromURL("https://i.imgur.com/4AiXzf8.jpg", function(img
 	img.sendToBack();
 
     }, {
-      crossorigin: 'Anonymous'
+      crossOrigin: 'Anonymous'
     });
 
 
