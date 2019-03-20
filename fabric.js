@@ -22,6 +22,8 @@ var fonts = ['Monoton','Bungee Inline','Staatliches','Overlock','Fredericka the 
 var font = fonts[0];
 var order = 0;
 
+var imgData;
+
 $("#orgName").keyup(function() {
 
 	name = $("#orgName").val();
@@ -49,18 +51,14 @@ $("#next").click(function() {
 	console.log('clicked order');
 	order = fonts.indexOf(font);
 
-	if (order<fonts.length-1) {
+		if (order<fonts.length-1) {
 
-		order = order + 1;
+			order = order + 1;
 
-		console.log(order + ' ' + fonts.length);
-	} else {
-		order = 0;
-	}
-
-
-	
-
+			console.log(order + ' ' + fonts.length);
+		} else {
+			order = 0;
+		};
 
 	font = fonts[order];
 	lineOne.set('fontFamily', font);
@@ -76,28 +74,20 @@ $("#next").click(function() {
 
 });
 
-var imgData;
 
 
-	$("#export").click(function() {
-		console.log("clicked export");
+
+$("#export").click(function() {
+	
+	console.log("clicked export");
 
 	imgData = $("#firstCanvas").get(0).toDataURL();
 		
-
 		$("#firstCanvas").get(0).toBlob(function(blob) {
 			saveAs(blob, "testexport");
 		})
 
-	});
-
-
-	// 	$("#export").click(function() {
-	// 	console.log("clicked export");
-
-	// 	imgData = $("#firstCanvas").get(0).toDataURL();
-
-	// });
+});
 
 
 $("#orgName2").keyup(function() {
